@@ -19,10 +19,13 @@ export class WeatherApp {
   // j'install le téléphone chez moi
   constructor(private http:HttpClient){}
 
+
+
   // fonction appel vers API
   getSunData(){
     this.http.get(this.apiURL).subscribe({
       next:(data:any) =>{
+        console.log(data["data"]);
         this.description = data['data'][0]['weather']["description"]
         this.temp = data["data"][0]["temp"]
         this.origin = data["data"][0]["sources"][2]

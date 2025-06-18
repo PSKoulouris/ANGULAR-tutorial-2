@@ -1,0 +1,25 @@
+nav {
+
+    display: flex;
+    justify-content: space-around;
+
+    background: whitesmoke;
+
+    padding: 30px;
+
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    padding: 8px 16px;
+
+    color: gold;
+
+    transition: .2s;
+}
+
+a:hover{
+    background-color: blue;
+    
+}
