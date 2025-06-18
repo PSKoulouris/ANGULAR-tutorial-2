@@ -48,6 +48,6 @@ export class CommentsPage {
         this.commentsValue = '';
         this.getComments()
       }
-})
-}
+    })
+  }
 }
