@@ -1,1 +1,11 @@
-<p>rooms-page works!</p>
+<h2>Rooms</h2>
+<ul>
+    @for(room of roomsList; track room['id']){
+        <li>{{room['roomName']}}</li>
+    }
+</ul>
+<h2>Creation</h2>
+<form (ngSubmit)='postRoomAPI()'>
+    <input type="text" name="room" [(ngModel)]="roomValue">
+    <button type="submit">Créer la salle</button>
+</form>
