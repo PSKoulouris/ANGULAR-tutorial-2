@@ -7,7 +7,7 @@
   'cold': item.tempMin < 15,
   'hot': item.tempMax > 30
 }">
-        <p>Forecast for {{item.date}}</p>
+        <p class = "title">{{item.date}}</p>
         <p>Temperture: {{item.tempMin}} - {{item.tempMax}} °C</p>
         <p>Description: {{item.description}}</p>
         <img [src]="'https://cdn.weatherbit.io/static/img/icons/' + item.logo + '.png'"/>

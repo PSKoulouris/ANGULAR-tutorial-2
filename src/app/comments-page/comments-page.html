@@ -1,0 +1,16 @@
+<h2>Comments</h2>
+<ul>
+    @for(comment of commentsList; track comment['message']){
+        <li>
+            <strong>{{comment['user']}}</strong>: 
+            {{comment['message']}}
+        </li>
+    }
+</ul>
+
+<h2> Ajouter un commentaire</h2>
+<p>Mon ommentaire ici </p>
+<form (ngSubmit) = "submitForm()">
+    <input type = "text" [(ngModel)]="commentsValue" name = "comment">
+    <button type = "submit"> Ajouter</button>
+</form>

@@ -19,9 +19,19 @@ article {
 }
 
 .hot {
-    background-color: orange;
+    background: radial-gradient(circle, rgba(214, 195, 142, 0.1) 0%, rgb(224, 173, 52) 100%);
 }
 
 .cold {
-    background-color: lightblue;
+    background: radial-gradient(circle, rgba(223, 130, 9, 0.1) 0%, rgb(122, 122, 222) 100%);
+
 }
+
+.title {
+    font-weight: bold;
+    font-size: 33.18px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40.18px;}
