@@ -17,5 +17,5 @@ import { NavBar } from './nav-bar/nav-bar';
 
 
 export class App {
-  protected title = 'My New Angular Project';
+  protected title = 'WEATHER';
 }

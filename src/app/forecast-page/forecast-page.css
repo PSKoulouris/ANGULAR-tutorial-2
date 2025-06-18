@@ -1,0 +1,27 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+
+
+    padding: 16px;
+    margin: 100px;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: whitesmoke;
+    padding: 16px;
+}
+
+.hot {
+    background-color: orange;
+}
+
+.cold {
+    background-color: lightblue;
+}

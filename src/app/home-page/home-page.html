@@ -1,1 +1,10 @@
-<p>home-page works!</p>
+<h1>Acceuil</h1>
+
+<ul>
+    @for(eleve of studentsList; track eleve.name){
+    <li> {{eleve.name}} a obtenu un score de {{eleve.score}} /30 </li>
+    @if(eleve.score>20) {
+    <strong [ngClass]="(eleve.score>19) ? 'isExcellent' : '' ">Tres bien!</strong>
+    }
+}
+</ul>
